@@ -1,5 +1,13 @@
-var c1 = document.getElementById("color1");
-var c2 = document.getElementById("color2");
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    alert("使用 横屏 以获得最佳体验\nUse landscape mode for the best experience") 
+}
+
+$(window).resize(function() {
+    var TransformWidth =  1/$(window).width();
+    document.getElementsByTagName("body")[0].setAttribute(
+        "Transform", "scale("+TransformWidth+");"
+    );
+});
 $(document).ready(function(){
     $('#color1').click(function(){
         $('#bord').css({
