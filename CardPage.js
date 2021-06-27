@@ -1,5 +1,6 @@
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     alert("使用 横屏 以获得最佳体验\nUse landscape mode for the best experience") 
+    $('head').append('<link rel="stylesheet" type="text/css" href="banPress.css"/>');
 }
 
 $(window).resize(function() {
