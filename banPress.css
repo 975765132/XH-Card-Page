@@ -7,9 +7,9 @@
     user-select:none;
     -webkit-touch-callout: none; /*ios*/
   }
-  input,textarea {
+/*   input,textarea {
     -webkit-user-select:auto;
     margin: 0px;
     padding: 0px;
     outline: none;
-  }
+  } */
